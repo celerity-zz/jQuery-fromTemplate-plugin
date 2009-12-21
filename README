@@ -1,0 +1,56 @@
+Copyright (c) 2009 Tomas Salfischberger, John Resig
+
+== Origin ==
+
+This plugin jQuery is created by Tomas Salfischberger based on the
+Micro-Templating concept developed by John Resig.
+
+Original idea: http://ejohn.org/blog/javascript-micro-templating/
+Latest source: http://github.com/celerity/jQuery-fromTemplate-plugin
+
+I have developed this plugin as a clean method to apply the concepts of
+Micro-Templating to our jQuery based online crm tool <http://celerity-crm.nl>.
+The plugin allows separation of HTML markup and the Javascript code loading the
+data. This makes creating maintainable AJAX applications easier.
+
+The plugin differs from the original code example created by John Resig in the
+following ways:
+
+ * Created as a jQuery plugin (obviously)
+ * No use of "with(obj) { }" to avoid variable naming conflicts
+ * Applied a small fix to handle single-quotes (from the blog comments)
+ * Split the rendering and generating functions to create a better overview
+ * Reformatted some parts to keep it readable
+
+== Usage Example ==
+
+Check out example.html for a basic example of how to use this plugin in your
+own pages.
+
+== Configuration options ==
+
+You can set the "modelName" property to chose a different name to bind the data
+to in the template rendering. The "templatePrefix" property determines the
+prefix used in template IDs.
+
+== License ==
+
+MIT-licensed (as the original code by John Resig):
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell  copies
+of the Software, and to permit persons to whom the  Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
