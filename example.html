@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>jQuery fromTemplate Plugin Example</title>
+  <!-- Load jQuery from Google -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+  <!-- Load the fromTemplate plugin -->
+  <script type="text/javascript" src="jquery.fromTemplate.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      // The data usually comes from a JSON(P) call:
+      $('body').fromTemplate('HelloWorld', {text:'Hello World', name:'jQuery fromTemplate'});
+    });
+  </script>
+
+  <!-- The template: -->
+  <script type="text/html" id="tmpl_HelloWorld">
+    <div>
+      <p>My famous line: <%= data.text %> </p>
+
+      <% for(var i = 0; i < 5; i++) { %>
+        <span>Loop example <%= i %></span><br/>
+      <% } %>
+
+      <p>
+        Greetings,<br/>
+        <%= data.name %>
+      </p>
+    </div>
+  </script>
+</head>
+<body>
+
+</body>
+</html>
