@@ -31,7 +31,7 @@
 
   /* Generate the template function */
   function templateGenerator(str, opt) {
-    tmpl = document.getElementById(opt.templatePrefix + str).textContent;
+    tmpl = $("#" + opt.templatePrefix + str).html()
     return new Function(opt.modelName,
       "var p=[]; p.push('" +
       tmpl.replace(/[\r\t\n]/g, " ")
